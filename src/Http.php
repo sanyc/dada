@@ -34,7 +34,7 @@ class Http
         return self::request($url, 'get', array(), $header, $timeout);
     }
 
-    public static function request($url, $method = 'get', $data = array(), $header = false, $timeout = 15)
+    public static function request($url, $method = 'get', $data = null, $header = false, $timeout = 15)
     {
         self::$status = self::$curlError = self::$headerStr = null;
 
@@ -72,7 +72,7 @@ class Http
         return (intval($status["http_code"]) === 200) ? $content : false;
     }
 
-    public static function postRequest($url, array $data = array(), $header = false, $timeout = 10)
+    public static function postRequest($url, $data = null, $header = false, $timeout = 10)
     {
         return self::request($url, 'post', $data, $header, $timeout);
     }
