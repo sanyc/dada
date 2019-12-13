@@ -34,7 +34,7 @@ class Http
         return self::request($url, 'get', array(), $header, $timeout);
     }
 
-    public static function request($url, $method = 'get', $data, $header = false, $timeout = 15)
+    public static function request($url, $method = 'get', $data = null, $header = false, $timeout = 15)
     {
         self::$status = self::$curlError = self::$headerStr = null;
 

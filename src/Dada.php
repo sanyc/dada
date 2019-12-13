@@ -9,11 +9,7 @@ class Dada
     protected $dd_config = [];
 
     protected $apis = [
-        'cityCodeList'         => '/api/cityCode/list',
-        'addOrder'             => '/api/order/addOrder',
-        'orderQuery'           => '/api/order/status/query',
-        'orderQueryDeliverFee' => '/api/order/queryDeliverFee',
-        'orderAddAfterQuery'   => '/api/order/addAfterQuery'
+        'cityCodeList' => '/api/cityCode/list'
     ];
 
     public function __construct($config = [])
@@ -52,26 +48,6 @@ class Dada
     public function getCityCodes()
     {
         return $this->dDGet('cityCodeList');
-    }
-
-    public function addOrder($my_params)
-    {
-        return $this->dDGet('addOrder', $my_params);
-    }
-
-    public function orderQuery($order_id)
-    {
-        return $this->dDGet('orderQuery', ['order_id' => $order_id]);
-    }
-
-    public function orderQueryDeliverFee($my_params)
-    {
-        return $this->dDGet('orderQueryDeliverFee', $my_params);
-    }
-
-    public function orderAddAfterQuery($delivery_no)
-    {
-        return $this->dDGet('orderAddAfterQuery', ['deliveryNo' => $delivery_no]);
     }
 
     /**
