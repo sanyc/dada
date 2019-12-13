@@ -1,6 +1,6 @@
 <?php
 
-namespace Sanyc\Dada;
+namespace sanyc\Dada;
 
 class Http
 {

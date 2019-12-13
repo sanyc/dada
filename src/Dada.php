@@ -1,8 +1,8 @@
 <?php
 
-namespace Sanyc\Dada;
+namespace sanyc\Dada;
 
-use Sanyc\Dada\Http;
+use sanyc\Dada\Http;
 
 class Dada
 {
