@@ -1,0 +1,25 @@
+{
+    "name": "sanyc/dada",
+    "description": "达达快运",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "sanyc",
+            "email": "niexiaojiang@sina.com"
+        }
+    ],
+    "require": {
+        "php":">=7.0"
+    },
+    "autoload":{
+        "psr-4": {
+            "Sanyc\\Dada\\": "src"
+        }
+    },
+    "extra": {
+        "config": {
+            "dada": "src/config.php"
+        }
+    },
+    "minimum-stability": "dev"
+}
