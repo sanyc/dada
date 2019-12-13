@@ -17,8 +17,10 @@
         }
     },
     "extra": {
-        "config": {
-            "dada": "src/config.php"
+        "think": {
+            "config": {
+                "dada": "src/config.php"
+            }
         }
     },
     "minimum-stability": "dev"
